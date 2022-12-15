@@ -26,7 +26,7 @@ if(     minetest.registered_items["default:dirt_with_grass"]
 			return nil
 		end
 		minetest.swap_node( pos,       {name="default:dirt"})
-		minetest.add_node(  pos_above, {name="cottages:hay_mat", param2=math.random(2,25), paramtype="light"}) 
+		minetest.add_node(  pos_above, {name="cottages:hay_mat", param2=math.random(2,25)}) 
 		-- start a node timer so that the hay will decay after some time
 		local timer = minetest.get_node_timer(pos_above)
 		if not timer:is_started() then
@@ -57,6 +57,7 @@ minetest.register_node("cottages:hay_mat", {
 				{-0.5,-0.5,-0.5, 0.5, 0.5, 0.5},
 			}
 	},
+	paramtype="light",
 	-- make sure a placed hay block looks halfway reasonable
 	after_place_node = function(pos, placer, itemstack, pointed_thing)
 		minetest.swap_node( pos, {name="cottages:hay_mat", param2=math.random(2,25)})
