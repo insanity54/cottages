@@ -19,9 +19,6 @@ minetest.register_alias("random_buildings:half_door",                  "cottages
 minetest.register_alias("random_buildings:half_door_inverted",         "cottages:half_door_inverted");
 minetest.register_alias("random_buildings:gate_closed",                "cottages:gate_closed");
 minetest.register_alias("random_buildings:gate_open",                  "cottages:gate_open");
-minetest.register_alias("random_buildings:bed_foot",                   "cottages:bed_foot");
-minetest.register_alias("random_buildings:bed_head",                   "cottages:bed_head");
-minetest.register_alias("random_buildings:sleeping_mat",               "cottages:sleeping_mat");
 minetest.register_alias("random_buildings:loam",                       "cottages:loam");
 minetest.register_alias("random_buildings:bench",                      "cottages:bench");
 minetest.register_alias("random_buildings:table",                      "cottages:table");

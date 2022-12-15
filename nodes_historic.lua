@@ -231,9 +231,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cottages:glass_pane 4",
 	recipe = {
-		{cottages.craftitem_stick, cottages.craftitem_stick, cottages.craftitem_stick },
+		{"", cottages.craftitem_stick, "" },
 		{cottages.craftitem_stick, cottages.craftitem_glass, cottages.craftitem_stick },
-		{cottages.craftitem_stick, cottages.craftitem_stick, cottages.craftitem_stick }
+		{"", cottages.craftitem_stick, "" }
 	}
 })
 
